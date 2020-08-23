@@ -1,96 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".PostFragment"
-    android:background="@color/colorPrimaryDark">
+    tools:context=".PostFragment">
 
-    <androidx.appcompat.widget.LinearLayoutCompat
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
 
-        <TextView
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="8dp"
-            android:gravity="center"
-            android:text="BYLD"
-            android:textColor="@color/colorLightText"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Byld your project"
-            android:textColor="#7a8089"
-            android:textSize="14sp"
-            android:textStyle="normal" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="20dp">
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/input_title"
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Heading"
-                android:textColor="#242425"
-                android:textColorHint="#7a8089"
-                android:textSize="14sp" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_marginVertical="8dp"
+                android:gravity="center"
+                android:text="BYLD"
+                android:textColor="@color/colorLightText"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="20dp">
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/input_subheading"
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Sub Heading"
-                android:textColor="#242425"
-                android:textColorHint="#7a8089"
-                android:textSize="14sp" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:gravity="center"
+                android:text="Byld your project"
+                android:textColor="#7a8089"
+                android:textSize="14sp"
+                android:textStyle="normal" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="20dp">
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/input_body"
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Body"
-                android:textColor="#ffffff"
-                android:textColorHint="#ffffff"
-                android:textSize="14sp" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_marginVertical="20dp">
 
-        <Button
-            android:id="@+id/btn_post"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="10dp"
-            android:layout_marginTop="16dp"
-            android:background="@color/colorPrimary"
-            android:text="Create"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"></Button>
-    </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/input_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Heading"
+                    android:textColor="#242425"
+                    android:textColorHint="#7a8089"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/input_subheading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Sub Heading"
+                    android:textColor="#242425"
+                    android:textColorHint="#7a8089"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/input_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Body"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimary"
+                android:text="Create"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"></Button>
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
 
-</FrameLayout>
+    </FrameLayout>
+</layout>
