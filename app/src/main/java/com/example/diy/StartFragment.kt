@@ -33,7 +33,7 @@ class StartFragment : Fragment() {
         val firebaseUser = mAuth.currentUser
 
         if(firebaseUser == null) {
-            findNavController().navigate(R.id.action_startFragment_to_regFragment)
+            findNavController().navigate(R.id.action_startFragment_to_registerFragment)
         } else {
             findNavController().navigate(R.id.action_startFragment_to_listFragment)
         }
